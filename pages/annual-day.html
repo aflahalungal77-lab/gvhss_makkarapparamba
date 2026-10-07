@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annual Day | GVHSS Makkaraparamba</title>
+  <meta name="description" content="Explore Annual Day memories and performances at GVHSS Makkaraparamba.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="subpage">
+
+  <header class="sub-header">
+    <a class="sub-brand" href="../index.html">
+      <span class="sub-brand-icon"><i data-lucide="graduation-cap"></i></span>
+      <span>GVHSS <small>MAKKARAPPARAMBA</small></span>
+    </a>
+    <a class="sub-home" href="../index.html"><i data-lucide="arrow-left"></i> Home</a>
+  </header>
+
+  <main>
+    <section class="sub-hero">
+      <div class="sub-hero-content">
+        <span class="sub-eyebrow">SCHOOL MEMORIES</span>
+        <h1>Annual Day</h1>
+        <p>A celebration of student talent, creativity and achievement.</p>
+        <a href="#gallery" class="sub-button">Explore Memories <i data-lucide="arrow-down"></i></a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=85" alt="A celebration event">
+    </section>
+
+    <section class="sub-section">
+      <div class="sub-section-heading">
+        <span class="sub-eyebrow">A SPECIAL DAY</span>
+        <h2>Every Talent Deserves a Stage</h2>
+        <p>Annual Day is an opportunity to celebrate the efforts, skills and creativity of students.</p>
+      </div>
+      <div class="sub-about-grid">
+        <div class="sub-about-text">
+          <h3>Celebrating Student Talent</h3>
+          <p>Students can share their talents through stage performances, music, dance, drama and other activities.</p>
+          <p>These moments help students build confidence, work together and create memories with friends and teachers.</p>
+          <p>This page can be updated with the school's actual Annual Day photos and event details.</p>
+        </div>
+        <img class="sub-rounded-image" src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1000&q=85" alt="People enjoying a live performance">
+      </div>
+    </section>
+
+    <section class="sub-section sub-soft-section" id="gallery">
+      <div class="sub-section-heading">
+        <span class="sub-eyebrow">PHOTO GALLERY</span>
+        <h2>Annual Day Moments</h2>
+        <p>Replace these sample images with real photos from your school event.</p>
+      </div>
+      <div class="sub-gallery-grid">
+        <figure class="sub-gallery-item">
+          <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=85" alt="Event celebration">
+          <figcaption>Celebration</figcaption>
+        </figure>
+        <figure class="sub-gallery-item">
+          <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=900&q=85" alt="Stage performance">
+          <figcaption>Stage Moments</figcaption>
+        </figure>
+        <figure class="sub-gallery-item">
+          <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=900&q=85" alt="Lights at a live event">
+          <figcaption>Special Memories</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="sub-cta">
+      <h2>More School Memories</h2>
+      <p>Explore sports, arts, trips and Onam celebrations.</p>
+      <a class="sub-button" href="../index.html#memories">Explore All Events <i data-lucide="arrow-up-right"></i></a>
+    </section>
+  </main>
+
+  <footer class="sub-footer">
+    <p>© <span class="current-year"></span> GVHSS Makkaraparamba</p>
+    <a href="../index.html">Back to Home</a>
+  </footer>
+
+  <button class="sub-whatsapp" aria-label="Contact the school on WhatsApp" onclick="openSchoolWhatsApp()">
+    <i data-lucide="message-circle"></i><span>WhatsApp</span>
+  </button>
+
+  <script>
+    const SCHOOL_WHATSAPP_NUMBER = "91XXXXXXXXXX";
+    function openSchoolWhatsApp() {
+      if (!/^\d{10,15}$/.test(SCHOOL_WHATSAPP_NUMBER)) {
+        alert("Please add the school's WhatsApp number in this page's code.");
+        return;
+      }
+      window.open("https://wa.me/" + SCHOOL_WHATSAPP_NUMBER + "?text=" +
+        encodeURIComponent("Hello, I would like to know about Annual Day at GVHSS Makkaraparamba."),
+        "_blank", "noopener");
+    }
+    document.querySelector(".current-year").textContent = new Date().getFullYear();
+    lucide.createIcons();
+  </script>
+</body>
+</html>

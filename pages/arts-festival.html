@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arts Festival | GVHSS Makkaraparamba</title>
+  <meta name="description" content="Explore arts, creativity and student performances at GVHSS Makkaraparamba.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="subpage">
+
+  <header class="sub-header">
+    <a class="sub-brand" href="../index.html">
+      <span class="sub-brand-icon"><i data-lucide="graduation-cap"></i></span>
+      <span>GVHSS <small>MAKKARAPPARAMBA</small></span>
+    </a>
+    <a class="sub-home" href="../index.html"><i data-lucide="arrow-left"></i> Home</a>
+  </header>
+
+  <main>
+    <section class="sub-hero">
+      <div class="sub-hero-content">
+        <span class="sub-eyebrow">SCHOOL MEMORIES</span>
+        <h1>Arts Festival</h1>
+        <p>A celebration of imagination, expression and student creativity.</p>
+        <a href="#gallery" class="sub-button">View Gallery <i data-lucide="arrow-down"></i></a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=85" alt="A person performing on stage">
+    </section>
+
+    <section class="sub-section">
+      <div class="sub-section-heading">
+        <span class="sub-eyebrow">EXPRESS YOURSELF</span>
+        <h2>Creativity Has Many Forms</h2>
+        <p>Arts activities help students share their ideas, culture and talents.</p>
+      </div>
+      <div class="sub-about-grid">
+        <div class="sub-about-text">
+          <h3>Discover Your Talent</h3>
+          <p>An arts festival gives students opportunities to participate in music, dance, drama, drawing and other creative activities.</p>
+          <p>Students learn to express themselves, appreciate different talents and support their friends.</p>
+          <p>Use this page to share the real arts festival programme and memorable performances from your school.</p>
+        </div>
+        <img class="sub-rounded-image" src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1000&q=85" alt="Musical performance">
+      </div>
+    </section>
+
+    <section class="sub-section sub-soft-section" id="gallery">
+      <div class="sub-section-heading">
+        <span class="sub-eyebrow">PHOTO GALLERY</span>
+        <h2>Moments of Creativity</h2>
+        <p>Replace the sample images with your school's arts festival photos.</p>
+      </div>
+      <div class="sub-gallery-grid">
+        <figure class="sub-gallery-item">
+          <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=85" alt="Stage performance">
+          <figcaption>Performances</figcaption>
+        </figure>
+        <figure class="sub-gallery-item">
+          <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=900&q=85" alt="Music performance">
+          <figcaption>Music and Art</figcaption>
+        </figure>
+        <figure class="sub-gallery-item">
+          <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=85" alt="Art materials and painting">
+          <figcaption>Creative Ideas</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="sub-cta">
+      <h2>Celebrate Every Talent</h2>
+      <p>Visit the home page to explore more school events.</p>
+      <a class="sub-button" href="../index.html#memories">Explore Memories <i data-lucide="arrow-up-right"></i></a>
+    </section>
+  </main>
+
+  <footer class="sub-footer">
+    <p>© <span class="current-year"></span> GVHSS Makkaraparamba</p>
+    <a href="../index.html">Back to Home</a>
+  </footer>
+
+  <button class="sub-whatsapp" aria-label="Contact the school on WhatsApp" onclick="openSchoolWhatsApp()">
+    <i data-lucide="message-circle"></i><span>WhatsApp</span>
+  </button>
+
+  <script>
+    const SCHOOL_WHATSAPP_NUMBER = "91XXXXXXXXXX";
+    function openSchoolWhatsApp() {
+      if (!/^\d{10,15}$/.test(SCHOOL_WHATSAPP_NUMBER)) {
+        alert("Please add the school's WhatsApp number in this page's code.");
+        return;
+      }
+      window.open("https://wa.me/" + SCHOOL_WHATSAPP_NUMBER + "?text=" +
+        encodeURIComponent("Hello, I would like to know about the Arts Festival at GVHSS Makkaraparamba."),
+        "_blank", "noopener");
+    }
+    document.querySelector(".current-year").textContent = new Date().getFullYear();
+    lucide.createIcons();
+  </script>
+</body>
+</html>

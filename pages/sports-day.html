@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Day | GVHSS Makkaraparamba</title>
+  <meta name="description" content="Explore Sports Day memories at GVHSS Makkaraparamba.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="subpage">
+
+  <header class="sub-header">
+    <a class="sub-brand" href="../index.html">
+      <span class="sub-brand-icon"><i data-lucide="graduation-cap"></i></span>
+      <span>GVHSS <small>MAKKARAPPARAMBA</small></span>
+    </a>
+    <a class="sub-home" href="../index.html"><i data-lucide="arrow-left"></i> Home</a>
+  </header>
+
+  <main>
+    <section class="sub-hero">
+      <div class="sub-hero-content">
+        <span class="sub-eyebrow">SCHOOL MEMORIES</span>
+        <h1>Sports Day</h1>
+        <p>Team spirit, active minds and the joy of taking part.</p>
+        <a href="#gallery" class="sub-button">View Gallery <i data-lucide="arrow-down"></i></a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85" alt="Athletes running on a track">
+    </section>
+
+    <section class="sub-section">
+      <div class="sub-section-heading">
+        <span class="sub-eyebrow">PLAY • PARTICIPATE • GROW</span>
+        <h2>More Than Winning</h2>
+        <p>Sports give students a chance to learn teamwork, discipline and determination.</p>
+      </div>
+      <div class="sub-about-grid">
+        <div class="sub-about-text">
+          <h3>Everyone Can Take Part</h3>
+          <p>Sports Day brings students together through races, team games and other sporting activities.</p>
+          <p>Taking part helps students support one another, respect their teammates and enjoy healthy competition.</p>
+          <p>Add your school's actual event schedule, winners and photographs here when they are available.</p>
+        </div>
+        <img class="sub-rounded-image" src="https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=1000&q=85" alt="Students taking part in sports">
+      </div>
+    </section>
+
+    <section class="sub-section sub-soft-section" id="gallery">
+      <div class="sub-section-heading">
+        <span class="sub-eyebrow">PHOTO GALLERY</span>
+        <h2>Sports Day Highlights</h2>
+        <p>Sample images are shown below. Replace them with real school photos.</p>
+      </div>
+      <div class="sub-gallery-grid">
+        <figure class="sub-gallery-item">
+          <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=85" alt="Runners on a track">
+          <figcaption>Track Events</figcaption>
+        </figure>
+        <figure class="sub-gallery-item">
+          <img src="https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=900&q=85" alt="Outdoor sports">
+          <figcaption>Sports Activities</figcaption>
+        </figure>
+        <figure class="sub-gallery-item">
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=900&q=85" alt="Cycling as a sport">
+          <figcaption>Active Living</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="sub-cta">
+      <h2>Keep Exploring</h2>
+      <p>Discover more moments from our school community.</p>
+      <a class="sub-button" href="../index.html#memories">All School Memories <i data-lucide="arrow-up-right"></i></a>
+    </section>
+  </main>
+
+  <footer class="sub-footer">
+    <p>© <span class="current-year"></span> GVHSS Makkaraparamba</p>
+    <a href="../index.html">Back to Home</a>
+  </footer>
+
+  <button class="sub-whatsapp" aria-label="Contact the school on WhatsApp" onclick="openSchoolWhatsApp()">
+    <i data-lucide="message-circle"></i><span>WhatsApp</span>
+  </button>
+
+  <script>
+    const SCHOOL_WHATSAPP_NUMBER = "91XXXXXXXXXX";
+    function openSchoolWhatsApp() {
+      if (!/^\d{10,15}$/.test(SCHOOL_WHATSAPP_NUMBER)) {
+        alert("Please add the school's WhatsApp number in this page's code.");
+        return;
+      }
+      window.open("https://wa.me/" + SCHOOL_WHATSAPP_NUMBER + "?text=" +
+        encodeURIComponent("Hello, I would like to know about Sports Day at GVHSS Makkaraparamba."),
+        "_blank", "noopener");
+    }
+    document.querySelector(".current-year").textContent = new Date().getFullYear();
+    lucide.createIcons();
+  </script>
+</body>
+</html>
