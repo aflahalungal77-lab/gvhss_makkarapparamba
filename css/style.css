@@ -300,7 +300,7 @@ button {
 }
 
 .hero-photo {
-  background-image: url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=2000&q=85");
+  background-image: url("../assets/images/school.png");
   background-position: center;
   background-size: cover;
   transform: scale(1.02);
